@@ -21,7 +21,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "express": "^4.17.1",
-    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^1.6.0",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
@@ -37,12 +37,12 @@
     "uuid": "^8.3.2",
     "validator": "^13.6.0",
     "webpack": "^5.36.1",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
-    "mini-css-extract-plugin": "^1.6.0",
+    "jest": "^26.6.3",
     "webpack-cli": "^4.6.0",
-    "webpack-merge": "^5.7.3"
+    "webpack-dev-server": "^3.11.2"
   },
   "prettier": {
     "singleQuote": true
