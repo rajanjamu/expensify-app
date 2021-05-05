@@ -4,9 +4,9 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'development',
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, 'public'),
     historyApiFallback: true,
   },
   module: {
