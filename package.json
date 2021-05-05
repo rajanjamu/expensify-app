@@ -5,9 +5,12 @@
   "license": "MIT",
   "scripts": {
     "watch": "webpack --watch",
-    "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "test": "jest"
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js",
+    "dev-server": "webpack serve --open --config webpack.dev.js",
+    "start": "node server/server.js",
+    "test": "jest",
+    "heroku-postbuild": "npm run build:prod"
   },
   "dependencies": {
     "@babel/cli": "^7.13.16",
