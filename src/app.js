@@ -10,8 +10,6 @@ import './firebase/firebase';
 
 const store = configureStore();
 
-console.log(process.env.FIREBASE_API_KEY);
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />
