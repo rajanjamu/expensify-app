@@ -6,8 +6,11 @@ import configureStore from './store/configureStore';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
+import './firebase/firebase';
 
 const store = configureStore();
+
+console.log(process.env.FIREBASE_API_KEY);
 
 const jsx = (
   <Provider store={store}>
